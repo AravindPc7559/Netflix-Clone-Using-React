@@ -3,7 +3,7 @@ import './App.css'
 import Banner from './Component/Banner/Banner'
 import NavBar from './Component/navbar/NavBar'
 import RowPost from './Component/RowPost/RowPost'
-import {action,originals} from './urls.js';
+import {action,originals,romance} from './urls.js';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
     <Banner/>
     <RowPost url={originals} title='Netflix Orginals' />
     <RowPost url={action} title='Action' isSmall />
+    <RowPost url={romance} title='romance' isSmall />
     </div>
   )
 }
